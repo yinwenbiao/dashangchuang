@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.a {
+	height: 50px;
+	margin-top: 20px;
+}
+.a1 {
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+}
+.a2 {
+	width: 200px;
+	height: 31px;
+	float: right;
+}
+.a2 input {
+	width: 166px;
+	height: 31px;
+	background: url(images/input.png);
+	float: left;
+	border: 0;
+}
+.a2 button {
+	width: 33px;
+	height: 31px;
+	background: url(images/button.png);
+	float: left;
+	border: 0;
+}
+/*第一行结束*/
+.b {
+    height: 55px;
+    background: url(images/nav-bg.png);
+}
+.b ul {
+	width: 980px;
+	height: 55px;
+	margin: 0 auto;
+	list-style: none;
+}
+.b ul li {
+	float: left;
+	width: 130px;
+	height: 55px;
+	text-align: center;
+	background: url(images/nav-line.png) no-repeat right center;
+}
+.b ul li a {
+	color: #000;
+	font-weight: bold;
+	font-family: "黑体";
+	text-decoration: none;
+	line-height: 55px;
+	text-align: center;
+}
+.b ul li:hover {
+	background-color: blue;
+}
+/*第二行结束*/
+.c {
+	height: 601px;
+}
+.c1 {
+	width: 980px;
+	height: 601px;
+    margin: 0 auto;
+	background-image: url(images/banner.png);
+}
+/*第三行结束*/
+.d {
+	height: 30px;
+}
+.d1 {
+	width: 980px;
+	height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+.d2 {
+	width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	margin: 0 auto;
+	display: inline-block;
+	background-color: #CCD1D9;
+}
+.d3 {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	border-radius: 9px;
+	background-color: #656D78;
+}
+/*第四行结束*/
+.e {
+    height: 19px;
+    margin: 10px 0;
+}
+.e1 {
+	width: 980px;
+	margin: 0 auto;
+	background-color: #FBFBFB;
+}
+.e2 {
+	width: 600px;
+	height: 19px;
+	float: left;
+	font-family: "黑体";
+	opacity: 0.9;
+	font-weight: bold;
+}
+.e2 p {
+	width: 100px;
+	display: inline-block;
+}
+.e3 {
+	width: 90px;
+	height: 19px;
+	float: right;
+	background-image: url(images/share.png);
+}
+/*第五行结束   “最新公告”*/
+.f1 {
+	width: 980px;
+	height: 300px;
+	margin: 0 auto;
+}
+.f1 div p {
+	padding-left: 10px;
+	color: #7AB800;
+}
+.f22 {
+	width: 50px;
+	height: 50px;
+	color: #7FB610;
+	font-size: 50px;
+	margin-left: 20px;
+	margin-top: 50px;
+	float: left;
+}
+.f23 {
+	width: 50px;
+	height: 50px;
+	color: #7FB610;
+	font-size: 50px;
+	margin-right: 20px;
+	margin-top: 50px;
+	float: right;
+}
+.f2 {
+	float: left;
+	width: 320px;
+	height: 250px;
+	border: 1px solid #ccc;
+	padding-top: 10px;
+	background-image: url(images/pic.png);
+	background-repeat: no-repeat;
+	background-position: 94px 50px;
+}
+.f3 {
+	float: left;
+	width: 350px;
+	height: 250px;
+	border: 1px solid #ccc;
+	padding-top: 10px;
+	margin: 0 14px;
+}
+.f3 p span {
+	width: 220px;
+	color: #000;
+    display: inline-block;
+    text-align: right;
+}
+.f3 p span a {
+	text-decoration: none;
+	color: #000;
+}
+.f3 ul {
+	padding: 10px;
+}
+.f3 ul li {
+	list-style: none;
+	margin: 5px;
+	color: #6B6968;
+	border-bottom: 1px dashed;
+	font-size: 14px;
+}
+.f3 ul li a {
+	text-decoration: none;
+	color: #6B6A69;
+}
+.f3 ul li a:hover {
+	color: red;
+}
+.f3 ul li:first-child {
+	color: red;
+	border-bottom: 1px dashed #000;
+}
+.f4 {
+	float: left;
+	width: 276px;
+	color: #6B6968;
+	height: 250px;
+	border: 1px solid #ccc;
+	padding-top: 10px;
+}
+.f4 ul {
+	margin-top: 25px;
+}
+.f4 ul li {
+	list-style: none;
+	background: #fff url(images/border.png) no-repeat left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.f4 ul li a{
+	margin-left: 10px;
+	text-decoration: none;
+	color: #6B6968;
+}
+.f4 span {
+	width: 250px;
+	height: 40px;
+	display: inline-block;
+	margin: 30px 20px;
+}
+/*第六行结束*/
+hr {
+	border: 1px dashed #3E3E3E;
+	margin-bottom: 5px;
+}
+.g {
+	/*background-shadow: -2px -2px #1C1C1C;*/
+	height: 410px;
+	background-color: #2D2D2D;
+}
+.g1 {
+	width: 980px;
+	height: 280px;
+	margin: 0 auto;
+}
+.fu {
+	width: 64px;
+	height: 32px;
+	float: right;
+}
+.g1 td {
+	width: 110px;
+	height: 30px;
+}
+/*返回顶部*/
+
+
+
+
+.g1 td a {
+	text-align: center;
+	text-decoration: none;
+	color: #B6B6B6;
+}
+.gg td a {
+	text-align: center;
+	text-decoration: none;
+    color: #6F6F6F;
+}
+
+.gg {
+	font-size: 12px;
+}
+
+.g1 td a:hover {
+	color: red;
+}
+/*底部*/
+.footer {
+	width: 980px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+.footer1 {
+	margin-top: 10px;
+	margin-right: 0.5px;
+}
+.footer2 {
+	margin-top: 10px;
+	margin-left: 0.5px;
+}
