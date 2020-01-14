@@ -1,0 +1,66 @@
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.nav ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.nav ul a {
+	height: 30px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.nav ul a:nth-of-type(3) {
+	border-bottom: 3px solid red;
+	color: red;
+}
+
+.img {
+	width: 1200px;
+	height: 500px;
+	margin: 10px auto;
+	line-height: 30px;
+}
+
+.img img {
+	width: 100%;
+}
+
+aside ul li {
+	width: 1200px;
+	height: 20px;
+	padding: 25px 0;
+	margin: 0 auto;
+	font-size: 12px;
+	border-top: 1px dashed #ccc;
+}
+
+aside ul li span {
+	display: inline-block;
+	margin: 0 10px;
+	width: 30px;
+	height: 10px;
+	background: #fff url(images/arrows.jpg) 2px 2px no-repeat;
+}
+
+aside ul li p {
+	display: inline-block;
+	color: red;
+	font-size: 20px;
+}
+
+aside ul li:last-child {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px;
+}

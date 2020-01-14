@@ -1,0 +1,406 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #5a5a5a;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+header {
+	width: 1200px;
+	height: 74px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header ul {
+	width: 800px;
+	height: 30px;
+	position: relative;
+	float: right;
+	margin-top: 29px;
+	overflow: hidden;
+}
+
+.threed {
+	float: left;
+	padding: 0 20px;
+	transition: all 1s;
+}
+.threed p{
+	margin-top: 10px;
+}
+.threed >a:hover{
+	color: red;
+}
+.threed >p>a:hover{
+	color: red;
+}
+.threed:hover{
+	margin-top: -30px;
+	transition: all 1s;
+}
+#wid{
+	padding-right: 5px;
+}
+#wed{
+	padding-left: 5px;
+}
+
+
+
+.abs{
+	position: absolute;
+	left: 650px;
+	top: 20px;
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+}
+.ulspan {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background-color: #000;
+	background: url(../WorkingSketch/images/img-map.png) 0 0 no-repeat;
+}
+
+header ul li:last-child {
+	display: inline-block;
+	padding-left: 17px;
+	width: 0px;
+	height: 15px;
+	background: url(../WorkingSketch/images/img-map.png) -19px 6px no-repeat;
+}
+
+nav div {
+	width: 200px;
+	display: inline-block;
+	float: right;
+	height: 40px;
+}
+
+nav div input {
+	width: 148px;
+	height: 20px;
+	padding-left: 10px;
+	color: #fff;
+	float: left;
+	margin-top: 10px;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	font-size: 12px;
+	line-height: 20px;
+	background-color: #333;
+}
+
+nav div button {
+	width: 40px;
+	height: 40px;
+	border: 0;
+	cursor: pointer;
+	background: url(../WorkingSketch/images/sek.png);
+}
+
+#bg {
+	background: #333;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+nav {
+	height: 40px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.red {
+	width: 80px;
+	height: 40px;
+	padding: 0 10px;
+	list-style-type: none;
+	float: left;
+}
+
+nav ul li:first-child {
+	text-align: left;
+	/*background-color: */
+}
+nav >ul>li:last-child{
+	background-color: red;
+	width: 80px;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+nav >ul >li:last-child:hover{
+	background-color: red;
+}
+.red:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+}
+
+nav .red ul {
+	width: 1200px;
+	height: 230px;
+	margin: 0 auto;
+	/*margin-left: -600px;*/
+}
+.red110{
+	width: 100%;
+	height: 230px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	/*padding-left: 20%;*/
+	display: none;
+	background-color: #fff;
+	z-index: 10;
+}
+nav .red ul li {
+	width: 190px;
+	height: 95px;
+	float: left;
+	margin-top: 30px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+}
+
+nav .red ul li:last-child {
+	border: 0;
+}
+
+nav .red ul li img {
+	width: 190px;
+	height: 120px;
+}
+
+nav .red ul li p {
+	color: #000;
+	font-size: 12px;
+}
+
+nav ul li:hover .red110{
+	display: block;
+}
+
+nav .red ul li a {
+	color: rgb(255, 0, 0);
+	font-size: 12px;
+}
+
+footer {
+	width: 100%;
+	height: 385px;
+	background-color: #fff;
+}
+
+.footerUl {
+	width: 1200px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+.footerUl li {
+	width: 240px;
+	height: 40px;
+	float: left;
+	margin: 30px 19px;
+	font-size: 26px;
+	line-height: 40px;
+	padding-right: 20px;
+	border-right: 1px solid #ccc;
+}
+
+#footerLi4 {
+	border-right: 0px;
+}
+
+.footerUl li span {
+	display: inline-block;
+	width: 54px;
+	height: 45px;
+	float: left;
+	margin-right: 8px;
+}
+.footerUl li:hover{
+	cursor: pointer;
+	color: #ccc;
+}
+.footerUl>li:hover span{
+	margin-top: -10px;
+	transition: margin-top 1s ease;
+}
+.f1 {
+	background: #fff url(../WorkingSketch/images/img-map.png) -224px 0px no-repeat;
+}
+
+.f2 {
+	background: #fff url(../WorkingSketch/images/img-map.png) -279px 0px no-repeat;
+}
+
+.f3 {
+	background: #fff url(../WorkingSketch/images/img-map.png) -335px 0px no-repeat;
+}
+
+.f4 {
+	background: #fff url(../WorkingSketch/images/img-map.png) -386px 0px no-repeat;
+}
+
+footer div {
+	width: 1200px;
+	height: 260px;
+	margin: 0 auto;
+}
+
+footer div ul {
+	width: 80px;
+	padding-top: 40px;
+	float: left;
+	font-size: 20px;
+	display: inline-block;
+	margin: 0 80px 0 0;
+}
+
+footer div ul li {
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: 400;
+	margin: 10 0 0 0;
+}
+
+#dimensional {
+	width: 230px;
+	height: 130px;
+	margin: 0;
+}
+
+#dimensional li {
+	float: left;
+	margin: 10px;
+}
+
+#dimensional li p {
+	width: 92px;
+	text-align: right;
+	font-size: 12px
+}
+
+#footerRight {
+	width: 220px;
+	height: 130px;
+	margin: 0;
+	text-align: right;
+	float: right;
+}
+.footerer>ul>li{
+	color: #847070;
+}
+.footerer>ul>li:hover{
+		color: #000;
+}
+#footerRight>li>p {
+	font-size: 30px;
+}
+
+#footerRight li:last-child {
+	width: 80px;
+	height: 15px;
+	border: 1px solid red;
+	padding: 9px 14px;
+	line-height: 15px;
+	float: right;
+}
+
+#footerRight li span {
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	background: #fff url(../WorkingSketch/images/img-map.png) 0 -73px no-repeat;
+}
+
+article {
+	height: 50px;
+	width: 100%;
+	background-color: #f6f6f6;
+}
+
+article div {
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+article div ul li {
+	height: 10px;
+	padding: 0 10px;
+	float: left;
+	border-right: 1px solid #ccc;
+}
+
+article div ul li:last-child {
+	border: 0;
+}
+
+article div span {
+	display: inline-block;
+	padding-top: 3px;
+}
+
+article div p {
+	height: 20px;
+	float: right;
+	display: inline-block;
+}
+
+.wang {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 100;
+	display: none;
+}
+
+.wang ul {
+	padding: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -275px;
+	margin-left: -275px;
+	width: 390px;
+	height: 570px;
+	background-color: #fff;
+}
+
+.wang ul li {
+	width: 370px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+}
+
+.wang ul li img {
+	width: 350px;
+}

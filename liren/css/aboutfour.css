@@ -1,0 +1,95 @@
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.nav ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.nav ul a {
+	height: 30px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.nav ul a:nth-of-type(2) {
+	border-bottom: 3px solid red;
+	color: red;
+}
+
+.img {
+	width: 1200px;
+	height: 430px;
+	margin: 10px auto;
+	line-height: 30px;
+}
+
+.img img {
+	width: 100%;
+}
+
+.dianqi {
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+
+.dianqi li {
+	width: 1200px;
+	height: 240px;
+	padding: 15px 0;
+	line-height: 30px;
+	border-top: 1px solid #ccc;
+}
+
+.dianqi li img {
+	float: left;
+	width: 250px;
+	height: 160px;
+	margin: 40px 10px;
+}
+
+h2 {
+	margin-top: 32px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+h6 {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.dianqi>li:hover .more2>span{
+	width: 120px;
+	background-color: red;
+	/*color: #fff;*/
+	transition: all 2s ease;
+}
+.more2>span{
+	height: 31px;
+	width: 0;
+	display: inline-block;
+	z-index: -10;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.more2 {
+	width: 120px;
+	height: 31px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #ccc;
+	text-align: center;
+	margin: 10px 20px;
+}

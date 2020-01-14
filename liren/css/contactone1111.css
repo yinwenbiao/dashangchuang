@@ -1,0 +1,104 @@
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.nav ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.nav ul a {
+	height: 30px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.nav ul a:nth-of-type(1) {
+	border-bottom: 3px solid red;
+	color: red;
+}
+
+.img {
+	width: 1200px;
+	height: 430px;
+	margin: 10px auto;
+	line-height: 30px;
+}
+
+.img img {
+	width: 100%;
+}
+
+.body {
+	width: 1200px;
+	height: 350px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.bo1 {
+	margin: 0 0 0 45px;
+	padding-top: 55px;
+	width: 550px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	border-right: 1px dashed #ccc;
+}
+
+.bo1 p {
+	margin: 10px 0;
+}
+
+.one {
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+}
+
+.two {
+	margin-top: 10px;
+	line-height: 30px;
+}
+
+.fen {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+
+.two .span {
+	display: inline-block;
+	width: 185px;
+	height: 35px;
+	background: #fff url(../WorkingSketch/images/img-map.png) -36px 0 no-repeat;
+}
+
+.bo2 {
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+	margin-top: 47px;
+	margin-left: 90px;
+}
+
+.bo2 p {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,61 @@
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.nav ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.nav ul a {
+	height: 30px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.nav ul a:nth-of-type(2) {
+	border-bottom: 3px solid red;
+	color: red;
+}
+
+.img {
+	width: 1200px;
+	height: 430px;
+	margin: 10px auto;
+	line-height: 30px;
+}
+
+.img img {
+	width: 100%;
+}
+
+.dianqi {
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+
+.dianqi li {
+	width: 1200px;
+	height: 250px;
+	padding: 15px 0;
+	line-height: 30px;
+	border-top: 1px solid #ccc;
+}
+
+.dianqi li img {
+	float: left;
+	margin-right: 10px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}

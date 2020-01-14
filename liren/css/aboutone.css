@@ -1,0 +1,81 @@
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.nav ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.nav ul a {
+	height: 30px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.nav ul a:nth-of-type(1) {
+	border-bottom: 3px solid red;
+	color: red;
+}
+
+.img {
+	width: 1200px;
+	height: 430px;
+	margin: 10px auto;
+	line-height: 30px;
+}
+
+.img img {
+	width: 100%;
+}
+
+.dianqi {
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+
+.dianqi li {
+	width: 1200px;
+	padding: 20px 0;
+	line-height: 30px;
+	font-size: 12px;
+	border-top: 1px solid #ccc;
+}
+
+.ding {
+	position: relative;
+	height: 88px;
+}
+
+.dianqi li p {
+	display: inline-block;
+	color: red;
+}
+
+.dianqi li p {
+	font-size: 20px;
+}
+
+.dianqi li span {
+	display: inline-block;
+	margin: 0 10px;
+	width: 30px;
+	height: 10px;
+	background: #fff url(../WorkingSketch/images/arrows.jpg) 2px 2px no-repeat;
+}
+
+.li-li {
+	position: absolute;
+	top: 20px;
+	left: 120px;
+	font-size: 12px;
+}

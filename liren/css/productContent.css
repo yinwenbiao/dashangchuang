@@ -1,0 +1,155 @@
+.article {
+	width: 1200px;
+	height: 600px;
+	margin: 40px auto;
+	background-color: #fff;
+}
+
+.big {
+	width: 750px;
+	height: 450px;
+	border: 1px solid #ccc;
+	float: left;
+	position: relative;
+	background-image: url(../WorkingSketch/images/cp003.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.big img {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.xiao {
+	height: 100px;
+	width: 1000px;
+	float: left;
+	margin-top: 20px;
+}
+
+.xiao li {
+	width: 140px;
+	height: 81px;
+	float: left;
+	cursor: pointer;
+	margin-right: 15px;
+	border: 1px solid #ccc;
+}
+
+.article img {
+	width: 100%;
+	height: 100%;
+}
+
+.ar {
+	width: 350px;
+	height: 300px;
+	margin-left: 50px;
+	display: inline-block;
+}
+
+.ar p {
+	font-size: 22px;
+}
+
+.ar li a {
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+	color: #fff;
+	margin: 30px 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.ar li a:first-Child {
+	background-color: #00c4f4;
+}
+.ar li a:first-Child:hover{
+	background-color: #74d7ef;
+}
+.ar li a:last-Child {
+	background-color: #f49944;
+}
+.ar li a:last-Child:hover{
+	background-color: #ffbb7c;
+}
+.ar li {
+	border-bottom: 1px solid #ccc;
+}
+
+.two {
+	margin-top: 10px;
+	line-height: 30px;
+}
+
+.fen {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+
+.two .span {
+	display: inline-block;
+	width: 185px;
+	height: 35px;
+	background: #fff url(../WorkingSketch/images/img-map.png) -36px 0 no-repeat;
+}
+
+.xin {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ccc;
+}
+
+.xin p {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.xin span {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background: #fff url(../WorkingSketch/images/img-map.png) -218px -46px no-repeat;
+}
+
+.leng {
+	width: 1200px;
+	height: 230px;
+	border-bottom: 1px solid #ccc;
+	margin: 0 auto;
+}
+
+.leng li {
+	padding: 20px 43px;
+	float: left;
+	text-align: center;
+}
+.leng li:hover{
+	padding-top: 15px;
+	transition: all 1s; 
+}
+.leng li img {
+	width: 150px;
+}
+
+.leng li a {
+	color: red;
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.chan {
+	width: 1200px;
+	padding-left: 30px;
+	margin-bottom: 54px;
+	margin: 30px auto;
+}

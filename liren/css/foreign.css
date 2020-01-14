@@ -1,0 +1,159 @@
+.nav {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.nav ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.nav ul a {
+	height: 30px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.nav ul a:nth-of-type(1) {
+	border-bottom: 3px solid red;
+	color: red;
+}
+
+.img {
+	width: 1200px;
+	height: 525px;
+	margin: 10px auto;
+	line-height: 30px;
+}
+
+.img img {
+	width: 100%;
+}
+
+aside {
+	width: 1200px;
+	height: 650px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+.bglogo {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.bo1 {
+	width: 150px;
+	height: 550px;
+	border: 1px solid #ccc;
+	margin-top: 50px;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.bo1>span{
+	width: 150px;
+	height: 90px;
+	/*padding-top: 5px;*/
+	display: inline-block;
+}
+.bo1>span>img {
+	width: 151px;
+	margin-top: 5px;
+	animation: Run 0.5s infinite ease;
+}
+.bo1>img{
+	width: 150px;
+	
+}
+@keyframes Run{
+	0%{
+		margin-top: 0;
+	}
+	50%{
+		margin-top: 5px;
+	}
+	100%{
+		margin-top: 0px;
+	}
+}
+.box1 {
+	font-size: 12px;
+	margin: auto;
+	padding: 10px 25px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+
+.w {
+	height: 250px;
+}
+
+.one {
+	font-size: 20px;
+	color: red;
+}
+
+.two {
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+
+.three {
+	display: inline-block;
+	border: 1px solid #ccc;
+	float: left;
+	padding: 3px;
+	margin-right: 30px;
+}
+.three>p {
+	padding-left: 20px;
+}
+
+.for {
+	font-size: 20px;
+	margin: 5px;
+}
+
+.fiv {
+	width: 30px;
+	margin: 5px 0 5px 253px;
+	border-bottom: 1px solid red;
+}
+
+.none {
+	position: absolute;
+	top: 0;
+	width: 990px;
+	text-align: left;
+	height: 550px;
+	left: 120px;
+	padding-left: 80px;
+	display: none;
+}
+
+.none1 {
+	position: absolute;
+	top: 0;
+	width: 990px;
+	height: 550px;
+	text-align: left;
+	left: 120px;
+	padding-left: 80px;
+}
+
+.box1:hover {
+	color: red;
+	border-bottom: 1px solid red;
+}
