@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.a {
+			width: 790px;
+			height: 340px;
+			padding: 5px;
+			margin: 100px auto;
+			border: 1px solid #ccc;
+			position: relative;
+		}
+		.a1 {
+			width: 790px;
+			height: 340px;
+			position: relative;
+			overflow: hidden;
+		}
+		.ab {
+			width: 4000px;
+			height: 340px;
+			list-style: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.ab li {
+			float: left;
+			margin-right: 10px;
+		}
+		.ac {
+			width: 90px;
+			position: absolute;
+			top: 300px;
+			left: 50%;
+			border-radius: 15px;
+			margin-left: -60px;
+			background-color: rgba(236,217,217,0.4);
+			list-style: none;
+			padding: 10px;
+		}
+		.abc {
+			width: 12px;
+			height: 12px;
+			border-radius: 6px;
+			background-color: #000;
+			float: left;
+			margin-right: 6px;
+			cursor: pointer;
+		}
+		.active {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="a1">
+			<ul class="ab">
+				<li><img src="js/JS-day05/images/banner-1.jpg"></li>
+				<li><img src="js/JS-day05/images/banner-2.jpg"></li>
+				<li><img src="js/JS-day05/images/banner-3.jpg"></li>
+				<li><img src="js/JS-day05/images/banner-4.jpg"></li>
+				<li><img src="js/JS-day05/images/banner-5.jpg"></li>
+			</ul>
+		</div>
+		<ul class="ac">
+			<li class="abc active"></li>
+			<li class="abc"></li>
+			<li class="abc"></li>
+			<li class="abc"></li>
+			<li class="abc"></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var liArr = document.getElementsByClassName("abc");
+		var ul = document.getElementsByClassName("ab")[0];
+		var cont = 1 ;
+		// 添加鼠标移入事件
+			for(var j=0;j<liArr.length;j++){
+			//给每个li元素添加一个索引
+			liArr[j].index_ = j;
+			//移入事件
+			liArr[j].onmouseover = function(){
+				//停止轮播图
+				clearInterval(intervalId);
+
+				//使用排他思想，将所有的li的样式还原 
+				for(var j=0;j<liArr.length;j++){
+					liArr[j].className = "abc";
+				}
+				//将当前的li的样式设为红色
+				this.className = "abc active";
+
+				//移动图片
+				//计算结束的位置
+				move(ul,this.index_*-800);
+
+				cont = this.index_ + 1;	
+			}
+			//移出事件
+			liArr[j].onmouseout = function(){
+				//开始自动播放轮播图
+				auto();
+			}
+		}
+		function auto (){
+			intervalId = setInterval(function(){
+			cont  = (cont>4)? 0 :cont;
+			move(ul,cont*-800);
+			for(var j = 0;j<liArr.length;j++){
+				liArr[j].className = "abc";
+				}
+				liArr[cont].className = "abc active";
+				cont++;
+		},3000);
+	}
+	auto();
+ 	function move(obj,num,){	
+    clearInterval(obj.intervalId);
+	obj.intervalId = setInterval(function(){
+		if(obj.offsetLeft < num){
+			// 注意需更改ul这个名字
+			var step = Math.ceil((num-ul.offsetLeft)/10)
+			var move_num = (obj.offsetLeft+step > num) ? num : (obj.offsetLeft+step);
+			obj.style.left = move_num +'px';
+		}else if(obj.offsetLeft > num){
+			var step = Math.floor((num-ul.offsetLeft)/10)
+			var move_num = (obj.offsetLeft+step < num) ? num : (obj.offsetLeft+step);
+			obj.style.left = move_num+'px';
+		}else{
+			clearInterval(obj.intervalId);
+		}
+	},20);
+}
+
+	</script>
+</body>
+</html>

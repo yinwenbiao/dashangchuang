@@ -1,0 +1,253 @@
+
+(function ($) {
+    $.fn.jCarouselLite = function (o) {
+        o = $.extend({
+            btnPrev: null,
+            btnNext: null,
+            btnGo: null,
+            mouseWheel: false,
+            auto: null,
+            speed: 1000,
+            easing: null,
+            vertical: false,
+            circular: true,
+            visible: 4,
+            start: 0,
+            scroll: 3,
+            beforeStart: null,
+            afterEnd: null
+        },
+        o || {});
+        return this.each(function () {
+            var b = false,
+            animCss = o.vertical ? "top" : "left",
+            sizeCss = o.vertical ? "height" : "width";
+            var c = $(this),
+            ul = $("ul", c),
+            tLi = $("li", ul),
+            tl = tLi.size(),
+            v = o.visible;
+            if (o.circular) {
+                ul.prepend(tLi.slice(tl - v - 1 + 1).clone()).append(tLi.slice(0, v).clone());
+                o.start += v
+            }
+            var f = $("li", ul),
+            itemLength = f.size(),
+            curr = o.start;
+            c.css("visibility", "visible");
+            f.css({
+                overflow: "hidden",
+                float: o.vertical ? "none" : "left"
+            });
+            ul.css({
+                margin: "0",
+                padding: "0",
+                position: "relative",
+                "list-style-type": "none",
+                "z-index": "1"
+            });
+            c.css({
+                overflow: "hidden",
+                position: "relative",
+                "z-index": "2",
+                left: "0px"
+            });
+            var g = o.vertical ? height(f) : width(f);
+            var h = g * itemLength;
+            var j = g * v;
+            f.css({
+                width: f.width(),
+                height: f.height()
+            });
+            ul.css(sizeCss, h + "px").css(animCss, -(curr * g));
+            c.css(sizeCss, j + "px");
+            if (o.btnPrev) $(o.btnPrev).click(function () {
+                return go(curr - o.scroll)
+            });
+            if (o.btnNext) $(o.btnNext).click(function () {
+                return go(curr + o.scroll)
+            });
+            if (o.btnGo) $.each(o.btnGo,
+            function (i, a) {
+                $(a).click(function () {
+                    return go(o.circular ? o.visible + i : i)
+                })
+            });
+            if (o.mouseWheel && c.mousewheel) c.mousewheel(function (e, d) {
+                return d > 0 ? go(curr - o.scroll) : go(curr + o.scroll)
+            });
+            if (o.auto) setInterval(function () {
+                go(curr + o.scroll)
+            },
+            o.auto + o.speed);
+            function vis() {
+                return f.slice(curr).slice(0, v)
+            };
+            function go(a) {
+                if (!b) {
+                    if (o.beforeStart) o.beforeStart.call(this, vis());
+                    if (o.circular) {
+                        if (a <= o.start - v - 1) {
+                            ul.css(animCss, -((itemLength - (v * 2)) * g) + "px");
+                            curr = a == o.start - v - 1 ? itemLength - (v * 2) - 1 : itemLength - (v * 2) - o.scroll
+                        } else if (a >= itemLength - v + 1) {
+                            ul.css(animCss, -((v) * g) + "px");
+                            curr = a == itemLength - v + 1 ? v + 1 : v + o.scroll
+                        } else curr = a
+                    } else {
+                        if (a < 0 || a > itemLength - v) return;
+                        else curr = a
+                    }
+                    b = true;
+                    ul.animate(animCss == "left" ? {
+                        left: -(curr * g)
+                    } : {
+                        top: -(curr * g)
+                    },
+                    o.speed, o.easing,
+                    function () {
+                        if (o.afterEnd) o.afterEnd.call(this, vis());
+                        b = false
+                    });
+                    if (!o.circular) {
+                        $(o.btnPrev + "," + o.btnNext).removeClass("disabled");
+                        $((curr - o.scroll < 0 && o.btnPrev) || (curr + o.scroll > itemLength - v && o.btnNext) || []).addClass("disabled")
+                    }
+                }
+                return false
+            }
+        })
+    };
+    function css(a, b) {
+        return parseInt($.css(a[0], b)) || 0
+    };
+    function width(a) {
+        return a[0].offsetWidth + css(a, 'marginLeft') + css(a, 'marginRight')
+    };
+    function height(a) {
+        return a[0].offsetHeight + css(a, 'marginTop') + css(a, 'marginBottom')
+    }
+})(jQuery);
+$(function () {
+    $("#botton-scroll").jCarouselLite({btnNext: ".next",btnPrev: ".prev"});
+    $('#top-menu li').hover(function () {$('ul', this).slideDown(200)},
+    function () {$('ul', this).slideUp(200)});
+    $(".click").click(function () {$("#panel").slideToggle("slow");$(this).toggleClass("active");return false});
+    $('.fade').hover(function () {$(this).fadeTo("slow", 0.5)},
+    function () {$(this).fadeTo("slow", 5)});
+    $(".over").mouseover(function () {$(".left").hide();$(this).children(".left").show()});
+    $(".zzover").mouseover(function () {$(".zzleft").show()});
+    $(".zzover").mouseout(function () {$(".zzleft").hide()});
+    $(".U_menu dt").children("h2").click(function () { $(this).siblings("ul").toggle() });
+    $(".U_nav li").click(function () { $(".U_nav li").removeClass("on"); $(this).addClass("on") });
+    $(".U_N_nav1,.U_N_nav2,.U_N_nav3,.U_N_nav4").click(function () { $(".UN_nav1,.UN_nav2,.UN_nav3,.UN_nav4").hide(); });
+    $(".U_N_nav1").click(function () { $(".UN_nav1").show();});
+    $(".U_N_nav2").click(function () { $(".UN_nav2").show();});
+    $(".U_N_nav3").click(function () { $(".UN_nav3").show();});
+    $(".U_N_nav4").click(function () { $(".UN_nav4").show();});
+});
+$(function () {
+    $(".TRC_reply_on").click(function () { $(".TRC_reply_on").show(); $(".TRC_reply_off,.TR_reply_children").hide(); $(this).hide(); $(this).parents(".TRC_reply").children(".TR_reply_children").show(); $(this).siblings(".TRC_reply_off").show(); $(".TRP_ok").text(""); });
+    $(".TRC_reply_off").click(function () { $(".TR_reply_children,.TRC_reply_off").hide(); $(".TRC_reply_on").show(); $(".TRP_ok").text(""); });
+
+/////////////////////////////////////指南栏目////////////////////////////////////
+//图层隐藏、显示		食客攻略
+    $(".js_Layer dl").mouseover(function () { $(this).parents(".js_Layer").children("dl").children("dt").show(); $(this).parents(".js_Layer").children("dl").children("dd").hide(); $(this).children("dt").hide(); $(this).children("dd").show(); });
+    //小资厨房
+    $(".js_Layer li").mouseover(function () { $(this).children("div").css("bottom", "0px") });
+    $(".js_Layer li").mouseout(function () { $(this).children("div").css("bottom", ""); });
+/////////////////////   LI的鼠标动作 - 添加样式   ///////////////////////////////////////
+    var li_hover = $(".li_hover")
+    li_hover.children("li").mouseover(function () { $(this).addClass("this_li"); })
+    li_hover.children("li").mouseout(function () { $(this).removeClass("this_li"); })
+
+    //标签点击切换		点击排行、特色推荐		菜谱排行榜
+    $(".js_tab1,.js_tab2,.js_tab3,.js_tab4").click(function () { $(this).siblings().removeClass("js_tab_a"); $(this).addClass("js_tab_a"); $(this).parents(".js_tab").children(".js_tab_a1,.js_tab_a2,.js_tab_a3,.js_tab_a4").hide(); });
+    $(".js_tab1").click(function () { $(this).parents(".js_tab").children(".js_tab_a1").show();});
+    $(".js_tab2").click(function () { $(this).parents(".js_tab").children(".js_tab_a2").show();});
+    $(".js_tab3").click(function () { $(this).parents(".js_tab").children(".js_tab_a3").show();});
+    $(".js_tab4").click(function () { $(this).parents(".js_tab").children(".js_tab_a4").show(); });
+    /////////////////////////////////////百科档案收缩效果/////////////////////////////////////
+    $(".Wiki_Archives_Title").click(function () { $(this).parents(".Wiki_Archives").children(".Wiki_Archives_Details").toggle(100); });
+    ///////////////////////////////////// 问答 快速回答 隐藏显示效果////////////////////////////////////
+    //var QAcona = $(".QA_LC_ThisAnswer").prop("outerHTML");
+    //var QAconb = $(".QA_LC_Answer").prop("outerHTML");
+    //$(".QA_LC_con").live("click", function () {
+    //    $(this).parents(".QA_list_con").siblings(".QA_list_con").removeClass("QA_show");
+    //    $(this).parents(".QA_list_con").addClass("QA_show");
+    //    $(this).parents(".QA_list_con").siblings(".QA_list_con").children(".QA_LC_Answer").replaceWith(QAcona);
+    //    $(this).siblings(".QA_LC_ThisAnswer").replaceWith(QAconb);
+    //})
+    //$(".QA_LCA_off").live("click", function () {
+    //    $(this).parents(".QA_LC_Answer").replaceWith(QAcona);
+    //})
+    ///////////////////// 问答 问答详情 追问 ///////////////////////
+    //$(".QAR_Abtn").live("click", function () {
+    //    $(this).parents("dl").siblings("dl").find(".QA_LC_Answer").replaceWith(QAcona);
+    //    $(this).parents("dl").find(".QA_LC_ThisAnswer").replaceWith(QAconb);
+    //})
+
+});
+function setTab(name, num, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var con = document.getElementById(name + "_" + "con" + i);
+        menu.className = i == num ? "li_current" : "";
+        con.style.display = i == num ? "block" : "none"
+    }
+}
+jQuery(document).ready(function () {
+    $("div#com_itab_1 li").hover(function () {
+        $("div#com_itab_1 li").each(function () {
+            $(this).children("div").show();
+            $(this).children("p").hide();
+            $(this).children("div").hide();
+            $(this).children("p").show()
+        });
+        $(this).children("div").show();
+        $(this).children("p").hide()
+    },
+    function () { })
+});
+function show_hiddendiv() {
+    document.getElementById("hidden_div").style.display = 'inline';
+    document.getElementById("_strHref").href = 'javascript:hidden_showdiv();';
+    document.getElementById("_strSpan").innerHTML = "<u>收起</u>"
+}
+function hidden_showdiv() {
+    document.getElementById("hidden_div").style.display = 'none';
+    document.getElementById("_strHref").href = 'javascript:show_hiddendiv();';
+    document.getElementById("_strSpan").innerHTML = "<u>展开</u>"
+}
+function checkAll(check) {
+    if (check.checked) {
+        $(".list [name='Id']").not(":disabled").attr("checked", "checked")
+    }
+    else {
+        $(".list [name='Id']").removeAttr("checked")
+    }
+}
+function del(link) {
+    var href = link.href;
+    var checked = $(".list [name='Id']:checked");
+    if (checked.length == 0) {
+        alert("请选择要删除的记录");
+    }
+    else {
+        var ids = new Array();
+        checked.each(function () {
+            ids.push({ name: "ids", value: this.value });
+        });
+        ids.push({ name: "v", value: Math.random().toString(36).slice(2) })
+
+        $.post(href, ids, function (data) {
+            if (data.success) {
+                location.reload();
+            }
+            else {
+                alert(data.message);
+            }
+        });
+    }
+}
+

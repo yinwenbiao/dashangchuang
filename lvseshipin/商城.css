@@ -1,0 +1,396 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #666666;
+}
+ul {
+    list-style: none;
+ }
+a {
+	text-decoration: none;
+}
+.huanying {
+	height: 30px;
+	background-color: #F2F2F2;
+}
+.huanying1 {
+	width: 1210px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+.huanying2 {
+	color: #FE7011;
+}
+.huanying a {
+	color: #FE7011;
+}
+.huanying1 ul {
+    list-style: none;
+    float: right;
+    margin-top: 2px;
+}
+.huanying1 ul li {
+    display: inline-block;
+    width: 90px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    border-right: 1px solid #D4D4D4;
+}
+.huanying1 ul li img {
+	margin-right: 5px;
+}
+.huanying3 {
+	border-left: 1px solid #D4D4D4;
+}
+.logo {
+	width: 1210px;
+	height: 100px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+.logo1 {
+	width: 550px;
+	margin: 0 auto;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -250px;
+}
+.logo1 a {
+	width: 50px;
+	height: 20px;
+}
+.mi {
+	border-left: 1px solid #666;
+	padding-left: 10px;
+}
+.mini {
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 3px;
+}
+.logo2{
+	width: 40px;
+	height: 25px;
+	background-color: #9ACC2F;
+	border: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.logo3 {
+	width: 40px;
+	height: 25px;
+	background-color: #fff;
+    border: 0;
+}
+.logo4 {
+	width: 450px;
+	height: 30px;
+}
+.logo5 {
+	width: 90px;
+	height: 32px;
+	background-color: #9ACC2F;
+	color: #fff;
+	margin-left: -4px;
+	border: 1px solid #9ACC2F;
+}
+.logo6 {
+	width: 150px;
+	height: 50px;
+	float: right;
+	margin-top: 15px;
+}
+.logo7 {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #F8F8F6;
+    border: 0;
+    position: absolute;
+    right: 40px;
+    top: 18px;
+    background-image: url(商城/images/gouwuche.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.logo8 {
+	width: 40px;
+	height: 30px;
+    position: absolute;
+    right: 0;
+    top: 18px;
+	background-color: #9ACC2F;
+	border: 0;
+}
+.daohang {
+	height: 430px;
+    font-size: 14px;
+}
+.erji1 {
+	width: 980px;
+	height: 30px;
+    position: relative;
+	margin: 0 auto;
+}
+.erji2 {
+	width: 150px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+}
+.erji3 {
+	width: 150px;
+	height: 25px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #666;
+}
+.erji3 div {
+	display: inline-block;
+}
+.img1 {
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+.img2 {
+	width: 25px;
+	height: 25px;
+	float: right;
+	background-image: url(商城/images/newico.png);
+	background-position: 255px 0;
+}
+.erji4 {
+    width: 150px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 30px;
+}
+.erji2:hover .erji4{
+	display: block;
+}
+.erji2:hover {
+    background-color: #9ACC2F;
+    color: #fff;
+}
+.shouye {
+	display: inline-block;
+	height: 30px;
+	position: absolute;
+	left: 150px;
+	top: 0;
+}
+.erji1 .span1 {
+	display: inline-block;
+	width: 65px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.daohang1 {
+	height: 400px;
+	background-image: url(商城/images/20181121ehdnki.jpg);
+	background-repeat: no-repeat;
+	background-position: -150px 0;
+}
+/*开始精选活动*/
+.jingxuan {
+	width: 1210px;
+	height: 30px;
+	margin: 20px auto;
+}
+.jingxuan p {
+	display: inline-block;
+	font-weight: bold;
+}
+.jingxuan span {
+	font-size: 14px;
+}
+/*结束精选活动*/
+.tupian {
+	width: 1210px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 14px;
+	border-top: 1px solid #666;
+}
+.tupian1 {
+	display: inline-block;
+	margin-right: 20px;
+}
+.tupian1 img {
+	width: 272px;
+}
+.xinxin {
+	width: 230px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	background-color: #99CC33;
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+}
+.tupian3 {
+	position: absolute;
+	top: 40px;
+}
+.tupian2 {
+    margin-left: 6px;
+}
+.tupian2 img {
+	width: 150px;
+}
+.xiangjiao {
+	display: inline-block;
+	width: 179px;
+	height: 270px;
+	margin-left: 240px;
+	padding-left: 10px;
+	margin-top: 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc
+}
+.huaxian {
+	font-size: 12px;
+	text-decoration: line-through;
+}
+.maijia {
+	color:red; 
+}
+.r1 {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	margin-left: 80px;
+}
+.r1 img {
+	border-radius: 10px;
+}
+.hetao {
+	display: inline-block;
+	width: 179px;
+	height: 270px;
+
+	margin-top: 10px;
+	padding-left: 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc
+}
+.hetao5 {
+	display: inline-block;
+	width: 179px;
+	height: 270px;
+
+	margin-top: 10px;
+	padding-left: 10px;
+	border-bottom: 1px solid #ccc
+}
+.sc {
+    width: 1210px;
+    height: 100px;
+    margin: 0 auto;
+    margin: 5px 0 20px 0;
+}
+.foot {
+	width: 1210px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #ccc;
+}
+.footer {
+	list-style: none;
+}
+.footer li {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+    color: #EFEFEF;
+}
+.foot li:hover {
+	background-color: blue;
+}
+.www {
+	width: 1210px;
+	height: 174px;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    position: relative;
+	background-image: url(商城/images/footer-bg.png);
+	background-repeat: no-repeat;
+	background-position: -50px 0;
+	border-bottom: 1px solid #ccc;
+}
+.xinshou {
+	width: 160px;
+	height: 170px;
+	margin: 5px 10px 0 33px;
+	display: inline-block;
+}
+.www ul li {
+	height: 30px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+.xinshou1 {
+	width: 160px;
+	height: 170px;
+	position: absolute;
+	margin: 5px 10px 0 29px;
+	display: inline-block;
+}
+.xinshou2 {
+	width: 160px;
+	height: 170px;
+	position: absolute;
+	margin: 5px 10px 0 243px;
+	display: inline-block;
+}
+.xinshou3 {
+	width: 160px;
+	height: 170px;
+	position: absolute;
+	margin: 5px 10px 0 460px;
+	display: inline-block;
+}
+.xinshou4 {
+	width: 160px;
+	height: 170px;
+	position: absolute;
+	margin: 5px 10px 0 665px;
+	display: inline-block;
+}
+.xinshou5 {
+	width: 200px;
+	height: 170px;
+	position: absolute;
+	text-align: center;
+	margin: 5px 10px 0 800px;
+	display: inline-block;
+}
+.xinshou5 button {
+	width: 100px;
+	height: 25px;
+	border: 0;
+	background-color: #969696;
+	color: #fff;
+}
+.mmm {
+	width: 1210px;
+	height: 250px;
+	margin-top: 10px;
+	background-color: #FAFAFA;
+	text-align: center;
+}

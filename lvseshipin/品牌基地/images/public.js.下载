@@ -1,0 +1,60 @@
+﻿//截取邮箱后缀地址
+function getEmailHost(email) {
+    var mailHostLength = parseInt(parseInt(email.length) - parseInt(email.indexOf("@") + 1));
+    var mailHost = email.substr(email.indexOf("@") + 1, mailHostLength);
+    var mailURL = "http://mail." + mailHost;
+    return mailURL;
+
+}
+//判断是否有特殊字符
+function checkspecailchat(title) {
+    var reg = /^[\w\u4e00-\u9fa5]+$/gi;
+    if (reg.test(title))
+        return true;
+    return false;
+}
+function parseJsonDate(jsonDate) {
+    if (jsonDate == undefined || jsonDate == null || jsonDate == "") return "";
+    var currentDate;
+
+    //判断是否是时间戳，如果不是时间戳，最后转的时间为NaN
+    if (jsonDate.indexOf("/Date") == 0) {
+        var fullDate = new Date(parseInt(jsonDate.substr(6)));
+        var twoDigitMonth = (fullDate.getMonth() + 1) + "";
+        if (twoDigitMonth.length == 1) twoDigitMonth = "0" + twoDigitMonth;
+
+        var twoDigitDate = fullDate.getDate() + "";
+        if (twoDigitDate.length == 1) twoDigitDate = "0" + twoDigitDate;
+        currentDate = fullDate.getFullYear() + "-" + twoDigitMonth + "-" + twoDigitDate;
+    }
+    else {
+        currentDate = jsonDate.replace("/", "-").replace("/", "-").substring(0, jsonDate.length - 8);
+    }
+    return currentDate;
+};
+
+//获取手机验证码
+function sendVerificationCodeHandler(telphone, successFn, errorFn) {
+    var jsonText = { strTelphone: telphone };
+    var url = "/customer/sendverificationcode";
+    ajax_post_handler(url, jsonText, successFn, errorFn);
+}
+function ajax_post_handler(ajaxUrl, jsonText, callbackSuccess, callbackError) {
+    $.ajax({
+        cache: false,
+        type: 'POST',
+        url: ajaxUrl,
+        data: jsonText,
+        dataType: 'json',
+        success: function (data) {
+            if (callbackSuccess != null) {
+                callbackSuccess(data);
+            }
+        },
+        failure: function () {
+            if (callbackError != null) {
+                callbackError();
+            }
+        }
+    });
+}

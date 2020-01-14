@@ -1,0 +1,80 @@
+﻿.main-box-980 { width:980px; margin:auto;}
+/* 头部 - 2015/05/04 */
+.Home-header { background:#FFF;}
+.H-TopNav { height:27px; line-height:27px; background:#f5f5f5; border-bottom:1px solid #e0e0e0;}
+.H-TopNav-right { float:right; padding-right:80px; position:relative;}
+.H-TopNav-absolute { position:absolute; right:0px; top:2px;}
+.H-MainNav { height:80px;}
+.H-MainNav h1.H-logo { float:left; width:180px;}
+.H-MainNav h1.H-logo a { display:block; width:180px; height:80px; background:url(/images/logo.jpg) no-repeat left center; text-indent:-999px; overflow:hidden;}
+.H-MainNav-box { float:right; width:790px; height:38px; overflow:hidden; margin-top:21px;}
+.H-MainNav-box dl { float:left; width:152px; height:48px; line-height:24px; padding-left:14px; border-right:1px solid #E7E7E7; margin-top:-5px;}
+.H-MainNav-box dl dt,
+.H-MainNav-box dl dd { float:left; width:38px; height:24px; line-height:24px; }
+.H-MainNav-box dl dt { font-weight:bolder;}
+.H-MainNav-box dl.HM-sub-5 { width:100px; border:none;}
+.H-MainNav-box dl.HM-sub-5 dt,
+.H-MainNav-box dl.HM-sub-5 dd { float:left; width:50px; height:24px; line-height:24px;}
+.H-MainNav-box a:hover { color:#999; text-decoration:none;}
+.H-SubNav { height:36px; line-height:36px; background:url(images/nav.jpg) repeat-x;}
+.HS-list-box { float:left; width:780px;}
+.HS-list-box li { float:left; width:127px; height:36px; line-height:36px; text-align:center; background:url(images/split.jpg) no-repeat left 1px;}
+.HS-list-box li a { font:16px/36px "Microsoft Yahei"; color:#fff;}
+.HS-list-box li a:hover,.HS-list-box li.this_a a{ color:#ecdc48; text-decoration:none;}
+.HS-search-box { float:right; width:200px;}
+.HS-search-con { position:relative; margin-top:7px; width:148px; height:20px; padding:0 44px 0 6px; background:#fff; border:1px solid #fff;}
+.HS-search-con .HS-search-input { display:block; width:145px; height:20px; line-height:20px; border:0px; color:#666;}
+.HS-search-con .HS-search-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 42px;
+    height: 20px;
+    _height: 22px;
+    line-height: 20px;
+    border: none;
+    background: #7CB30D;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.Other-header { background:#FFF;}
+.O-TopNav { height:38px; line-height:38px; background:#f7f7f7;}
+.O-TopNav-left li { float:left; width:75px; height:18px; line-height:18px; padding:10px 0; position:relative; z-index:10;}
+.O-TopNav-left li .OT-title { display:block; padding-right:15px; color:#8B8B8B; border-right:1px solid #E4E4E4; text-align:center; background:url(images/3dot.png) no-repeat 55px 8px;}
+li.this_li .OT-title { position:absolute; top:0px; left:-1px; z-index:11; width:59px; height:38px; line-height:38px; background:#fff url(images/3dot.png) no-repeat 55px -8px; border-left:1px solid #E4E4E4;}
+.this_li .OT-NavList { display:block;}
+.O-TopNav-left .GoHome { width:70px;}
+.O-TopNav-left .GoHome a { display:block; color:#80A52B; font-weight:bolder; border-right:1px solid #E4E4E4;}
+.OT-NavList { display:none; width:205px; padding:5px 10px; line-height:24px; position:absolute; top:37px; left:-1px; background:#fff; border:1px solid #E4E4E4; z-index:10;}
+.OT-NavList a { display:inline-block; line-height:24px; padding:0px 6px; color:#999;}
+.O-TopNav-right { float:right; padding-right:80px; position:relative;}
+.O-TopNav-absolute { position:absolute; right:0px; top:7px;}
+.O-MainNav { height:80px;}
+.O-MainNav h1.H-logo { float:left; width:180px;}
+.O-MainNav h1.H-logo a { display:block; width:180px; height:80px; background:url(/images/logo.jpg) no-repeat left center; text-indent:-999px; overflow:hidden;}
+.O-MainNav h2.H-Category { float:left; margin-top:26px; padding:3px 0 0 16px; font-size:16px; color:#8D8D8D; font-family:'Microsoft YaHei';}
+.O-MainNav h2.H-Category a { color:#8D8D8D;letter-spacing:10px;}
+.O-MainNav h2.H-Category a:hover { color:#690; text-decoration:none;}
+.OT-search-box { float:right; padding-top:24px;}
+.OT-search-con { width:410px; height:30px; padding:0 60px 0 8px; border:1px solid #e0e0e0; position:relative; z-index:9; overflow:hidden;}
+.OT-search-input { width:410px; height:30px; line-height:30px; display:block; color:#999; border:none;}
+.OT-search-btn { width:60px; height:30px; font-size:14px; color:#757575; font-weight:bolder; background:#f5f5f5; border:none; border-left:1px solid #e0e0e0; position:absolute; top:0; right:0; cursor:pointer;}
+.O-SubNav { height:40px; background:#8FB830; overflow:hidden;}
+.O-SubNav li { height:20px; padding:10px 0; float:left;}
+.O-SubNav li.this_a,
+.O-SubNav li:hover { background:#80A52B;}
+.O-SubNav .this_key,.O-SubNav .this_key:hover { color:#ecdc48;}
+.O-SubNav a { height:20px; line-height:20px; padding:0px 20px; display:inline-block; color:#fff; font-size:14px; border-right:1px solid #A5C659;}
+.O-SubNav a:hover { color:#fff; text-decoration:none;}
+.Nav-news a { padding:0 34px;}
+.Nav-wiki a { padding:0 15px;}
+.Nav-guide a { padding:0 34px;}
+.Nav-business a { padding:0 21px;}
+/********** 栏目页头部 - 顶部全文字导航 ***********/
+.O-TopNav-con dl { float:left; margin-right:10px;}
+.O-TopNav-con dl dt,
+.O-TopNav-con dl dd { float:left; margin-right:10px;}
+.O-TopNav-con dl dt { font-weight:bolder;}
+.O-TopNav-con .GoHome { color:#80A52B;}
+
