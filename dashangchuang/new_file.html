@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/haeder.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="font_1598937_9056muvmgs/iconfont.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="font_1602035_wodof7qled/iconfont.css"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/index.css"/> -->
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="font/iconfont.css"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/footer.css"/> -->
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				font-size: 12px;
+				background: #f5f6fa;
+				font-family: "Microsoft YaHei", tahoma, arial, Hevetica, "\\5b8b体", sans-serif;
+			}
+			ul,li{
+				list-style: none;
+				cursor: pointer;
+			}
+			a{
+				color: #8c8c8c;
+				text-decoration: none;
+			}
+			#dess{
+				line-height: 24px;
+				display: inline-block;
+				height: 24px;
+				position: relative;
+			}
+			#dess p{
+				position: relative;
+				z-index: 101;
+			}
+			#dess #address{
+				line-height: 24px;
+				display: inline-block;
+				height: 24px;
+				padding:0 20px 0 30px;
+			}
+			#dess i{
+				color: red;
+				position: absolute;
+				top: 0;
+				left: 8px;
+			}
+			#dess .dizhi{
+				height: 226px;
+				border: 1px solid #d2d2d2;
+				background-color: #fff;
+				line-height: 30px;
+				position: absolute;
+				visibility: hidden;
+				z-index: -100;
+				left: -1px;
+				top: 24px;
+				overflow: hidden;
+			}
+			#dess .hot{
+				font-size: 12px;
+			}
+			#dess .hot span{
+				display: inline-block;
+				width: 50px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				cursor: pointer;
+			}
+			#dess .hot span:hover{
+				background: #f00;
+				color: #fff;
+			}
+			#dess .dizhi-nav ul{
+				height: 16px;
+				width: 433px;
+			}
+			#dess .dizhi-nav li{
+				font-size: 14px;
+				color: #8c8c8c;
+				float: left;
+				height: 16px;
+				line-height: 16px;
+				padding: 0 3px;
+				margin-right: 1px;
+				font-weight: 700;
+			}
+			#dess .dizhi-nav li:hover{
+				color: #ff0000;
+			}
+			#dess .dizhi-body{
+				width: 433px;
+				font-size: 12px;
+				line-height: 25px;
+			}
+			#dess .dizhi-body ul{
+				width: 433px;
+				height: 180px;
+				overflow: auto;
+			}
+			#dess .dizhi-body ul li{
+				overflow: hidden;
+			}
+			#dess .dizhi-body li>div:first-of-type{
+				width: 40px;
+				text-align: center;
+			}
+			#dess .dizhi-body li>div:first-of-type span{
+				border-radius: 50%;
+				display: inline-block;
+				width: 25px;
+				background: #ccc;
+			}
+			#dess .dizhi-body li>div{
+				float: left;
+				margin-bottom: 5px;
+			}
+			#dess .dizhi-body li>div:last-of-type{
+				width: 360px;
+			}
+			#dess .dizhi-body li>div:last-of-type span{
+				padding: 5px;
+			}
+			#dess .dizhi-body li>div:last-of-type span:hover{
+				color: red;
+				background: lightgray;
+			}
+		</style>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<span id='dess'>
+			<p><span id="address">郑州市</span><i class="iconfont icon-tubiaozhizuomoban-copy-copy"></i></p>
+			<div class="dizhi">
+				<div class="hot">
+					<span>苏州市</span>
+					<span>北京市</span>
+					<span>天津市</span>
+					<span>上海市</span>
+				</div>
+				<div class="dizhi-nav">
+					<ul></ul>
+				</div>
+				<div class="dizhi-body">
+					<ul></ul>
+				</div>
+			</div>
+		</span>
+		
+		
+		
+		
+		
+		<script src="js/haeder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

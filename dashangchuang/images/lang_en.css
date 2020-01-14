@@ -1,0 +1,52 @@
+/*英文版页面样式调整*/
+.lang_en .quick_links a.cart_list .span {
+    width: 25px;
+}
+
+.lang_en .catetop-jiadian .catetop-main .catetop-lift-item {
+    width: 150px;
+}
+.lang_en .catetop-main .catetop-lift-item span {
+    width: 95px;   
+}
+.lang_en .summary-item .si-tit {
+    width: 70px;
+}
+.lang_en .summary-item .si-warp {
+    width: 476px;
+}
+.lang_en .summary-price-wrap .si-cumulative {
+    float: left;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.lang_en .form-other .item-label {
+    width: 150px;
+}
+.lang_en .user-items .item .label {
+
+    width: 140px; text-align: left;
+
+}
+.lang_en .catetop-main .catetop-lift-item {
+    width: 140px;
+}
+.lang_en .get_pwd_form{
+    width: 548px;
+}
+.lang_en .gp-tab li .iconfont {
+    left: 20px;
+}
+.lang_en .user-safe-level { line-height: 31px;}
+.lang_en .user-safe-level .level-progress {    
+    margin-top: 15px;
+}
+.lang_en .increment_invoice_info .user-items .item .label {
+    width: 125px;
+}
+.lang_en .user-form .form-label{
+     width: 100px;
+}
+.lang_en .user-items .item .value {
+    width: calc(100% - 136px);
+}

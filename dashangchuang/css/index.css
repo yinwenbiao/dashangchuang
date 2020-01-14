@@ -1,0 +1,465 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	font-size: 12px;
+	background: #f5f6fa;
+	font-family: "Microsoft YaHei", tahoma, arial, Hevetica, "\\5b8b体", sans-serif;
+}
+ul,li{
+	list-style: none;
+	cursor: pointer;
+}
+a{
+	color: #8c8c8c;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+}
+#dess{
+	line-height: 28px;
+	display: inline-block;
+	height: 28px;
+	position: relative;
+	margin-left: 10px;
+}
+#dess #address{
+	line-height: 24px;
+	display: inline-block;
+	height: 24px;
+	padding:0 20px 0 20px;
+}
+#dess i{
+	color: red;
+	position: absolute;
+	top: 0;
+	left: 4px;
+}
+#dess p{
+	position: relative;
+	z-index: 101;
+}
+#dess .dizhi{
+	height: 226px;
+	border: 1px solid #d2d2d2;
+	background-color: #fff;
+	line-height: 30px;
+	position: absolute;
+	visibility: hidden;
+	z-index: -100;
+	top: 29px;
+	overflow: hidden;
+}
+#dess .hot{
+	font-size: 12px;
+}
+#dess .hot span{
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+#dess .hot span:hover{
+	background: #f00;
+	color: #fff;
+}
+#dess .dizhi-nav ul{
+	height: 16px;
+	width: 433px;
+}
+#dess .dizhi-nav li{
+	font-size: 14px;
+	color: #8c8c8c;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	padding: 0 3px;
+	margin-right: 1px;
+	font-weight: 700;
+}
+#dess .dizhi-nav li:hover{
+	color: #ff0000;
+}
+#dess .dizhi-body{
+	width: 433px;
+	font-size: 12px;
+	line-height: 25px;
+}
+#dess .dizhi-body ul{
+	width: 433px;
+	height: 180px;
+	overflow: auto;
+}
+#dess .dizhi-body ul li{
+	overflow: hidden;
+}
+#dess .dizhi-body li>div:first-of-type{
+	width: 40px;
+	text-align: center;
+}
+#dess .dizhi-body li>div:first-of-type span{
+	border-radius: 50%;
+	display: inline-block;
+	width: 25px;
+	background: #ccc;
+}
+#dess .dizhi-body li>div{
+	float: left;
+	margin-bottom: 5px;
+}
+#dess .dizhi-body li>div:last-of-type{
+	width: 360px;
+}
+#dess .dizhi-body li>div:last-of-type span{
+	padding: 5px;
+}
+#dess .dizhi-body li>div:last-of-type span:hover{
+	color: red;
+	background: lightgray;
+}
+.aside{
+	position: fixed;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	z-index: 1000;
+	display: none;
+}
+.aside li{
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	width: 70px;
+	text-align: center;
+	margin-bottom: -1px;
+	color: #000;
+	background: #fafafa;
+	position: relative;
+}
+.aside p{
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	width: 70px;
+	text-align: center;
+	margin-bottom: -1px;
+	color: #000;
+	background: #fafafa;
+	position: relative;
+}
+.aside p:hover{
+	color: white;
+	background: #FF4040;
+}
+.aside li i{
+	position: absolute;
+	right: -12px;
+	font-size: 20px;
+	top: 0;
+	display: none;
+}
+.aside .b-active{
+	background: #FF4040;
+	color: #ffffff;
+}
+.aside .b-active i{
+	color: #FF4040;
+	display: block;
+}
+.aside li:hover{
+	background: #FF4040;
+	color: #ffffff;
+}
+.b-nianhuo{
+	width: 1200px;
+	height: 350px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.b-nianhuo ul{
+	width: 1200px;
+	height: 200px;
+	padding-bottom: 5px;
+	position: relative;
+	margin: -3px 0 0 0;
+	background: #f42424;
+}
+.b-nianhuo ul li{
+	float: left;
+	margin: 10px 5px 0;
+}
+.b-nianhuo ul li:hover{
+	transform: translateY(-3px);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 20px 0px;
+	border-radius: 10px;
+}
+.b-miaosha{
+	background: #f42424;
+	margin: 0 auto;
+	height: 350px;
+	width: 1200px;
+	overflow: hidden;
+}
+.b-miaosha h2{
+	height: 45px;
+	line-height: 45px;
+	padding: 5px 10px 0;
+}
+.b-miaosha h2 span:first-of-type{
+	color:#FFFFFF;
+}
+.b-miaosha h2 span:nth-of-type(2){
+	color: yellow;
+	font-size: 18px;
+	margin-left: 350px;
+}
+.b-miaosha h2 button{
+	float: right;
+	margin-top: 10px;
+	outline: none;
+	width: 130px;
+	height: 24px;
+	border: 1px solid #fff;
+	border-radius: 12px;
+	background: rgba(0,0,0,0);
+	color: #fff;
+}
+.b-ms{
+	width: 1200px;
+	height: 280px;
+	position: relative;
+}
+.b-ms ul{
+	width: 10000px;
+	position: absolute;
+}
+.b-ms li{
+	float: left;
+	margin: 5px 0 10px 10px;
+	height: 280px;
+	width: 228px;
+	background: #fff;
+	line-height: 18px;
+	text-align: center;
+	color: gray;
+}
+.b-ms li:hover{
+	transform: translateY(-3px);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 20px 0px;
+}
+.b-ms li:hover img{
+	opacity: 0.7;
+}
+.b-ms li img{
+	width: 180px;
+	margin: 18px 0 10px;
+}
+.b-ms li a{
+	color: black;
+}
+.b-ms li p{
+	width: 180px;
+	height: 36px;
+	font-size: 14px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-overflow: clip;
+}
+.b-ms li p:hover{
+	color: red;
+}
+.b-ms li span{
+	font-size: 18px;
+	color: red;
+}
+.b-ms .left,.b-ms .right{
+	position: absolute;
+	top: 50%;
+	height: 60px;
+	line-height: 60px;
+	margin-top: -30px;
+	width: 20px;
+	font-size: 20px;
+	color: white;
+	display: none;
+	background: rgba(0,0,0,0.3);
+}
+.b-ms .left:hover{
+	background: rgba(0,0,0,0.5);
+}
+.b-ms .right:hover{
+	background: rgba(0,0,0,0.5);
+}
+.b-ms .right{
+	right: 0;
+}
+.b-jianhuo{
+	width: 1200px;
+	height: 586px;
+	margin: 20px auto 0;
+}
+.b-jh{
+	width: 1297px;
+	height: 586px;
+	margin-left: -97px;
+	background: url(../images/b-jhbanner.png) no-repeat;
+}
+.b-jh ul{
+	width: 1000px;
+	height: 555px;
+	float: right;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.b-jh ul li{
+	font-size: 0;
+}
+.b-jh ul li:hover img{
+	transform: translateY(-3px);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 20px 0px;
+}
+.b-find{
+	width: 1200px;
+	height: 430px;
+	margin: 20px auto 0;
+}
+.b-find> div{
+	width: 595px;
+	height: 430px;
+	float: left;
+	background: #FFFFFF;
+}
+.b-find >div:first-child{
+	margin-right: 10px;
+}
+.b-find-head{
+	width: 595px;
+	height: 50px;
+	color: white;
+	line-height: 50px;
+}
+.b-find-head h3{
+	float: left;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 15px;
+}
+.b-find-head a{
+	float: right;
+	color: white;
+	margin-right: 10px;
+}
+.b-find-head:first-of-type{
+	background: #449dae;
+}
+.b-find-head:last-of-type{
+	background: #a25684;
+}
+.b-find-as{
+	width: 595px;
+	height: 360px;
+	margin-top: 10px;
+}
+.b-find-as >div{
+	width: 184px;
+	height: 340px;
+	float: left;
+	border-right: #ccc 1px solid;
+	padding: 10px 5px;
+	font-size: 14px
+}
+.b-find-as >div img{
+	width: 160px;
+	margin: 25px 0 15px 0;
+	text-align: center;
+	transition:all 0.5s;
+}
+.b-find-as >div p:first-of-type{
+	border-top: 1px solid #ccc;
+	margin: 20px 10px 0;
+	line-height: 30px;
+	font-weight: 700;
+}
+.b-find-as >div p:last-of-type{
+	color: #CCCCCC;
+	margin: 5px 10px;
+	font-size: 12px;
+	margin-bottom: px;
+}
+.b-find-as >div button{
+	outline: none;
+	margin: 5px 10px;
+	background: #449DAE;
+	border: 1px solid #fff;
+	color: white;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+}
+.b-find-as >div button:hover{
+	margin-top: -5px;
+}
+.b-find-as ul{
+	float: right;
+	width: 400px;
+}
+.b-find-as li{
+	width: 200px;
+	height: 70px;
+	padding-top: 30px;
+	margin-bottom: 20px;
+	float: left;
+}
+.b-find-as li img{
+	width: 80px;
+	float: left;
+	margin: 0 10px;
+	transition:all 0.5s;
+}
+.b-find img:hover{
+	transform: scale(1.1);
+	transition:all 0.5s;
+}
+.b-find-as li span{
+	float: right;
+	display: inline-block;
+	width: 76px;
+	line-height: 20px;
+}
+.b-find-as li span:first-of-type{
+	overflow: hidden;
+	/* height: ; */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.b-find-as li span:last-of-type{
+	color: #449dae;
+}
+.b-find-two{
+	width: 595px;
+	height: 380px;
+}
+.b-find-two li{
+	float: left;
+	width: 267px;
+	height: 154px;
+	margin: 36px 0 0 30px;
+}
+.b-find-two li img{
+	width: 220px;
+	margin-top: 5px;
+}
+.b-find-two li span:first-of-type{
+	background: #A25684;
+	color: #fff;
+	padding: 0px 10px;
+	margin: 0 5px;
+	border-radius: 9px;
+}
