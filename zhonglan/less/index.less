@@ -1,0 +1,329 @@
+@width: 100%;
+@bgwirth: #fff;
+@bgbule: #0ba1e4;
+@magain: 20px 0;
+
+
+//轮播图
+#myCarousel {
+    margin-top: 80px;
+}
+
+//我们的成绩
+#Results {
+    padding-top: 30px;
+    margin-bottom: 170px;
+    .container {
+        h1 {
+            font-weight: 400;
+            color: #333;
+            margin: @magain;
+        }
+        p {
+            display: inline-block;
+            width: 80px;
+            border-bottom: 2px solid @bgbule;
+        }
+        h3 {
+            font-weight: 400;
+        }
+    }
+    .col-sm-3 {
+        margin: @magain;
+        .number-wrapper {
+            font-size: 70px;
+            color: @bgbule;
+        }
+        .title {
+            font-size: 18px;
+        }
+    }
+    color:#919191;
+}
+
+//我们的优势
+#Advantage {
+    padding-top: 30px;
+    background: #eee;
+    color: #919191;
+    .container {
+        h1 {
+            font-weight: 400;
+            color: #333;
+            margin: @magain;
+        }
+        p {
+            display: inline-block;
+            width: 80px;
+            border-bottom: 2px solid @bgbule;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+}
+
+#Advantage1 {
+    padding-top: 30px;
+    background: #eee;
+    color: #919191;
+    overflow: hidden;
+    .col-sm-3 {
+        padding: 0 20px;
+        margin: 0 0 30px 0;
+        div {
+            background: #fff;
+            padding: 10px;
+            p {
+                font-size: 80px;
+                color: @bgbule;
+            }
+            h2 {
+                margin: @magain;
+            }
+            .h4 {
+                margin: 30px 0;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            &:hover {
+                background: @bgbule;
+                color: #fff;
+            }
+            &:hover p {
+                background: @bgbule;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//我们的服务
+.row {
+    .main-title {
+        p {
+            display: inline-block;
+            width: 80px;
+            border-bottom: 2px solid @bgbule;
+        }
+    }
+    .card-area {
+        li {
+            border: 1px solid #ccc;
+            padding: 5px 0;
+            .card-title {
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 10px;
+                h4 {
+                    color: @bgbule;
+                    font-size: 20px;
+                }
+            }
+            .card-content {
+                p {
+                    margin: 20px auto;
+                    font-size: 14px;
+                }
+                a {
+                    border: 1px solid @bgbule;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    &:hover {
+                        background: #fff;
+                        color: @bgbule;
+                    }
+                }
+            }
+        }
+    }
+    .col-sm-12 {
+        .btn {
+            border: 1px solid @bgbule;
+            margin: @magain;
+            font-size: 18px;
+            &:hover {
+                background: @bgbule;
+                color: @bgwirth;
+            }
+        }
+    }
+}
+
+.hover1 {
+    transform: scale(1.1);
+    background: @bgbule;
+    color: #fff;
+    z-index: 10;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+    .card-title {
+        h4 {
+            color: #fff!important;
+        }
+    }
+    .card-content {
+        a {
+            background: @bgbule;
+            color: #fff;
+            border: 1px solid #fff!important;
+        }
+    }
+}
+
+//客户与鼓励 Customer
+#Customer {
+    margin-top: 30px;
+    background: #eee;
+    ul {
+        li {
+            margin-top: 50px;
+            margin-bottom: 90px;
+            position: relative;
+            padding: 10px;
+            border: 0;
+            div {
+                width: 100%;
+                border: 1px solid #255625;
+                border-radius: 5px;
+                padding: 0 6px 20px 6px;
+                img {
+                    width: 41px;
+                    border-radius: 50%;
+                    margin: -23px auto;
+                    margin-bottom: 20px;
+                }
+                div {
+                    width: @width;
+                    border: 0;
+                    input {
+                        font-size: 14px;
+                        border: 0;
+                        background: #ccc;
+                        float: left;
+                        color: @bgwirth;
+                    }
+                    p {
+                        float: right;
+                        color: #8C8C8C;
+                    }
+                }
+                #duihua {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: 9px;
+                    left: 50%;
+                    margin-left: -10px;
+                    background: #eee;
+                    border-right: 1px solid #255625;
+                    border-bottom: 1px solid #255625;
+                    transform: rotate(45deg);
+                }
+                #yinhao {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    bottom: -56px;
+                    left: 50%;
+                    margin-left: -26px;
+                    border-radius: 50%;
+                    font-size: 50px;
+                    color: #255625;
+                    border: 1px solid #255625;
+                }
+            }
+        }
+    }
+}
+
+.United {
+    list-style: none;
+    margin-right: 0;
+    li {
+        padding: 20px;
+        color: #8C8C8C;
+        div {
+            img {
+                width: 130px;
+                height: 98px;
+                margin: 1px;
+                border: 1px solid #737373;
+                float: left;
+                margin-right: 5px;
+                &:hover {
+                    border: 1px solid @bgbule;
+                }
+            }
+            h3 {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin-bottom: 0;
+                margin-left: 132px;
+                font-size: 16px;
+                color: @bgbule;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+            h4 {
+                margin-left: 132px;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            span {
+                display: block;
+                height: 32px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                font-size: 12px;
+                margin: 5px 0;
+                text-align: left;
+            }
+            P {
+                margin-left: 132px;
+                font-size: 12px;
+                margin-top: 6px;
+                a {
+                    color: #8C8C8C;
+                    float: right;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.one-new {
+    padding-bottom: 30px;
+}
+
+#logo {
+    width: 100%;
+    background: #eee;
+    ul {
+        list-style: none;
+        li {
+            padding: 15px;
+            img {
+                border: 1px solid #ccc;
+                background: #eee;
+                -webkit-filter: grayscale(100%);
+                &:hover {
+                    box-shadow: 0 0 10px 0 @bgbule;
+                    background: #fff;
+                    -webkit-filter: grayscale(0);
+                }
+            }
+        }
+    }
+}
+
+
+
