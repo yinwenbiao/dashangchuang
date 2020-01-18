@@ -152,6 +152,21 @@ body {
     }
     .book {
         .row {
+            .col-xs-12{
+                div{
+                    ul{
+                        li{
+                            div{
+                                h2{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .col-sm-9 {
                 border: 0;
                 .data-container{
@@ -159,12 +174,22 @@ body {
 //                  padding-left: 80px;
                     h2 {
                         margin-top: 0px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        a{
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
                     }
                     a {
                         font-size: 14px;
+                        width: 80px !important;
                     }
                     p {
                         font-size: 12px;
+                        span{
+                            margin-right: 10px!important;
+                        }
                     }
                    
                 }

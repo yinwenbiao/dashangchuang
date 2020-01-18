@@ -1,0 +1,37 @@
+.pox {
+    margin-top: 100px;
+}
+
+a {
+    color: #000;
+    text-decoration: none !important;
+}
+
+.xxx {
+    .one {
+        float: left;
+        border-right: 1px solid #000;
+        padding-right: 20px;
+        >li {
+            >a {
+                color: #006EC3;
+            }
+        }
+        >li>a:first-of-type ul {
+            display: block;
+        }
+        .two {
+            margin: 0;
+            padding-left: 15px;
+            display: none;
+            >li>a:first-of-type ul {
+                display: block;
+            }
+            .three {
+                margin: 0;
+                padding-left: 15px;
+                display: none;
+            }
+        }
+    }
+}

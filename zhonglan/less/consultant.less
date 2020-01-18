@@ -155,16 +155,29 @@ body {
     }
     .book {
         .row {
-            .col-sm-9 {
+            .col-sm-9{
+                    border-right: 0;
+            }
                 border: 0;
                 .data-container{
                     li {
 //                  padding-left: 80px;
                     h2 {
                         margin-top: 0px;
+//                      display: inline-block;
+//                      width: 100%;
+                        
+                                        overflow: hidden !important;
+                                    white-space: nowrap !important;
+                                    text-overflow: ellipsis !important;
+                    }
+                    img{
+                        float: left;
                     }
                     a {
                         font-size: 14px;
+                        height: 20px;
+                        
                     }
                     p {
                         font-size: 12px;
@@ -179,7 +192,7 @@ body {
             }
         }
     }
-}
+
 
 @media screen and(max-width:992px) {
     .book {
